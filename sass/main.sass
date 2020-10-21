@@ -1,0 +1,45 @@
+// $bg-color: #eee;
+// $font-color: #222;
+// $fz: 14px;
+// $ff: sans-serif
+@import "_variables.sass"
+@import "_setings"
+
+// * 
+//   padding: 0
+//   margin: 0
+
+.flex-box
+  width: 640px
+  height: 350px
+  background: $bg-color
+  border: 1px solid #888888
+  display: flex
+  flex-wrap: wrap
+.flex-item
+  flex: 1 1 200px
+  height: 150px
+  background: #ccc
+  border: 1px solid #999
+  margin: 5px
+  font-size: 1.5em
+  text-align: center
+  line-height: 150px
+.hide
+  // display: none
+  position: fixed
+  left: -200px
+  transition: all 0.5s
+.arrowLeft,
+.arrowRight
+  width: 50px
+  height: 50px
+  background: $bg-color
+  text-align: center
+  line-height: 50px
+  border: 1px solid #888888
+  display: inline-block
+  cursor: pointer
+  &:hover
+    background: $bg-color - #333
+    color: $font-color + #111
